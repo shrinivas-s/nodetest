@@ -12,6 +12,9 @@ app.get("/main.css",function(req,res){
 app.get("/TamilNadu_Logo.png",function(req,res){
 	 res.sendFile(__dirname+'/TamilNadu_Logo.png');
 })
+app.get("/qr.png",function(req,res){
+	 res.sendFile(__dirname+'/qr.png');
+})
 const port=process.env.PORT || 8080;
 server.listen(port, () => {
   console.log('Shrinivas listening on *:port');
