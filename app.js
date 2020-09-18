@@ -4,13 +4,12 @@ var server=require('http').Server(app);
 
 app.use(express.static('public'))
 app.get("/",function(req,res){
-	res.send("Come back later");
-	 //res.sendFile(__dirname+'/index.html');
+   res.sendFile(__dirname+'/index.html');
 })
 app.get('/download', function(req, res){
   const file = `${__dirname}/TN_CHN-DGL_I_1709_516018.pdf`;
   res.setHeader('Content-type', 'application/pdf');
- // res.download(file);
+  res.download(file);
 });
 
 
