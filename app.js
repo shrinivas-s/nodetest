@@ -7,7 +7,7 @@ app.get("/",function(req,res){
    res.sendFile(__dirname+'/index.html');
 })
 app.get('/download', function(req, res){
-  const file = `${__dirname}/TN_CHN-DGL_I_1709_516018.pdf`;
+  const file = `${__dirname}/TN_SLM-NLG_I_1809_160967.pdf`;
   res.setHeader('Content-type', 'application/pdf');
   res.download(file);
 });
